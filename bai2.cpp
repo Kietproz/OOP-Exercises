@@ -48,6 +48,7 @@ void so_sanh(PS a,PS b){
 int main(){
    //Nhập hai phân số
    PS a,b; nhap(a); nhap(b);
+   //Thực hiện so sánh hai số
    so_sanh(a,b);
    return 0;
 }
