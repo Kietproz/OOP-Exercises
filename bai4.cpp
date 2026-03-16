@@ -27,6 +27,7 @@ void process(Date &a){
     }
 }
 void in(Date a){
+    cout<<"Ngay tiep theo la: ";
     if(a.ngay<10){
         cout<<0;
     }
