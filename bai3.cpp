@@ -62,7 +62,6 @@ void nhan_chia(PS a,PS b){
 int main(){
    //Nhập hai phân số
    PS a,b; nhap(a); nhap(b);
-   //Tính toán các kết quả cộng, trừ, nhân, chia của 2 số thập phân
    cong_tru(a,b);
    nhan_chia(a,b);
    return 0;
