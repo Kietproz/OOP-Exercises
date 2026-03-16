@@ -20,7 +20,7 @@ void rut_gon(PS &x){
         x.ms=-x.ms;
     }
 }
-//Hàm xuất 
+//Hàm xuất
 void xuat(PS x){
     if(x.ts==0){
         cout<<0;
@@ -30,7 +30,7 @@ void xuat(PS x){
         cout<<x.ts;
         return;
     }
-    cout<<x.ts<<'/'<<x.ms<<'\n';
+    cout<<x.ts<<'/'<<x.ms;
 }
 //Hàm so sánh 2 phân số
 void so_sanh(PS a,PS b){
@@ -38,17 +38,18 @@ void so_sanh(PS a,PS b){
    rut_gon(a); rut_gon(b);
    //Quy đồng 2 phân số rồi so sánh
    int x=a.ts*b.ms,y=b.ts*a.ms;
+   cout<<"Phan so ";
    if(x>=y){
       xuat(a);
    }
    else{
       xuat(b);
    }
+   cout<<" la phan so lon nhat";
 }
 int main(){
    //Nhập hai phân số
    PS a,b; nhap(a); nhap(b);
-   //Thực hiện so sánh hai số
    so_sanh(a,b);
    return 0;
 }
