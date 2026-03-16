@@ -20,7 +20,7 @@ void rut_gon(PS &x){
         x.ms=-x.ms;
     }
 }
-//Hàm xuất 
+//Hàm xuất
 void xuat(PS &x){
     if(x.ts==0){
         cout<<0;
@@ -30,11 +30,12 @@ void xuat(PS &x){
         cout<<x.ts;
         return;
     }
-    cout<<x.ts<<'/'<<x.ms<<'\n';
+    cout<<x.ts<<'/'<<x.ms;
 }
 int main(){
     //Nhập phân số
     PS x; nhap(x);
+    cout<<"Phan so ";xuat(x);cout<<" sau khi rut gon la: ";
     rut_gon(x);
     xuat(x);
     return 0;
